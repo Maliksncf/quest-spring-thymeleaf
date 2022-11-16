@@ -6,11 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header th:replace="fragments/header.html :: top">
-    <nav>
-        <span>Doctor Secret Service</span>
-        <a href="/">Sign In</a>
-    </nav>
+<header th:replace="fragments/header :: top">
 </header>
 <ul class="doctor-list">
     <li><a href="/doctor/?number=1&name=William%20Hartnell">Doctor 1</a></li>
@@ -28,7 +24,6 @@
     <li><a href="/doctor/?number=13&name=Jodie%20Whittaker">Doctor 13</a></li>
     <li><a href="/doctor/">Unknown Doctor</a></li>
 </ul>
-<footer th:replace="fragments/footer.html :: bottom" />
-</footer>
+<footer th:replace="fragments/footer :: bottom"></footer>
 </body>
 </html>
