@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="">
 <head>
     <title>Doctor Sign In</title>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
+<header th:replace="fragments/header.html :: top">
     <nav>
         <span>Doctor Secret Service</span>
         <a href="/">Sign In</a>
@@ -28,13 +28,7 @@
     <li><a href="/doctor/?number=13&name=Jodie%20Whittaker">Doctor 13</a></li>
     <li><a href="/doctor/">Unknown Doctor</a></li>
 </ul>
-<footer>
-    <ul>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">TARDIS</a></li>
-    </ul>
-    <span>Copyright BBC/Terry Nation 1963</span>
+<footer th:replace="fragments/footer.html :: bottom" />
 </footer>
 </body>
 </html>
